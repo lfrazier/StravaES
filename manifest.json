@@ -1,0 +1,34 @@
+{
+  "name": "Strava Enhancement Suite",
+  "version": "1.0",
+  "description": "Press Alt+Shift+T to toggle units between imperial/metric on Strava",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon_019.png",
+    "default_title" : "Toggle units"
+  },
+  "permissions" : [
+    "tabs",
+    "http://www.strava.com/",
+    "http://strava.com/",
+    "https://www.strava.com/",
+    "https://strava.com/"
+  ],
+  "commands": {
+    "toggle-units": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "Toggle units between imperial/metric"
+    }
+  },
+  "icons" : {
+    "48" : "icon_048.png",
+    "128" : "icon_128.png"
+  },
+  "manifest_version": 2
+}
